@@ -1,0 +1,39 @@
+body {
+    background-color: cornflowerblue;
+}
+
+#clock-wrapper {
+    background-color: aquamarine;
+    padding: 40px;
+    width: 700px;
+    align-content: center;
+
+}
+  
+.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+.output {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+.caption {
+    display: block;
+    text-align: center;
+}
+
+
+/* font-family: 'Saira Stencil One', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Exo', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Changa', sans-serif;
+font-family: 'Audiowide', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Michroma', sans-serif; */
