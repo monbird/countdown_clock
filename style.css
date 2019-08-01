@@ -1,39 +1,103 @@
 body {
-    background-color: cornflowerblue;
+    background-image: url("./background-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#main-wrapper {
+    text-align: center;
+    width: 90vw;
+    max-width: 850px;
+    background-color: rgba(240, 240, 240, 0.7);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 10vh auto 20vh auto;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #clock-wrapper {
-    background-color: aquamarine;
-    padding: 40px;
-    width: 700px;
-    align-content: center;
-
-}
-  
-.item {
-    vertical-align: top;
     display: inline-block;
-    text-align: center;
-    margin: 20px;
+    padding: 10px 5vw;
+    background-color: #7e2b89;
 }
+
+.item {
+    display: inline-block;
+    width: 80px;
+    margin: 20px 15px 10px 15px;
+}
+
 .output {
-    width: 100px;
-    height: 100px;
-    background-color: grey;
-}
-.caption {
-    display: block;
+    height: 90px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
+    font-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-family: 'Saira Stencil One', cursive;
 }
 
+.caption {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+}
 
-/* font-family: 'Saira Stencil One', cursive;
-font-family: 'Anton', sans-serif;
-font-family: 'Abril Fatface', cursive;
-font-family: 'Exo', sans-serif;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Changa', sans-serif;
-font-family: 'Audiowide', cursive;
-font-family: 'Press Start 2P', cursive;
-font-family: 'Black Ops One', cursive;
-font-family: 'Michroma', sans-serif; */
+#input-wrapper {
+    display: block;
+}
+
+#input-wrapper p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+input {
+    margin: 5px 7px;
+}
+
+#countButton {
+    background-color: #7e2b89;
+    color: white;
+    font-family: 'Saira Stencil One', cursive;
+    margin: 5px 7px;
+}
+
+input {
+    width: auto !important;
+    display: inline-block  !important;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.fail {
+    color: red;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 605px) and (min-width: 380px) {
+    .item {
+        width: 100px;
+        margin: 20px 25px 10px 25px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #countButton {
+        display: block;
+        margin: 5px auto;
+    }
+}

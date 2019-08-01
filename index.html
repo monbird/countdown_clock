@@ -4,7 +4,7 @@
 <head>
     <title>Countdown clock</title>
     <meta charset="utf-8>">
-    <meta name="viewport"  content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,34 +24,34 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Countdown clock</h1>
+    <div id="main-wrapper"class="container">
+        <h1>TIME REMAINING</h1>
         <div id="clock-wrapper">
             <div class="item">
-                <div id="days" class="output"></div>
+                <div id="days" class="output">0</div>
                 <p class="caption">DAYS</p>
             </div>
             <div class="item">
-                <div id="hours" class="output"></div>
+                <div id="hours" class="output">0</div>
                 <p class="caption">HOURS</p>
             </div>
             <div class="item">
-                <div id="minutes" class="output"></div>
+                <div id="minutes" class="output">0</div>
                 <p class="caption">MINUTES</p>
             </div>
             <div class="item">
-                <div id="seconds" class="output"></div>
+                <div id="seconds" class="output">0</div>
                 <p class="caption">SECONDS</p>
             </div> 
         </div>
-        <form class="form-inline" action="#">
-            <label for="datePicker" class="mb-2 mr-sm-4">Date:</label>
-            <input type="date" id="datePicker" class="form-control  mb-2 mr-sm-2">
-            <label for="timePicker" class="mb-2 mr-sm-4">Time:</label>
-            <input type="time" id="timePicker" class="form-control  mb-2 mr-sm-2">
-            <button type="button" id="countButton" class="btn btn-primary mb-2">Start!</button>
-        </form>
+        <div id="input-wrapper" class="form-inline">
+            <p>until</p>
+            <input type="date" id="datePicker" class="form-control" placeholder="yyyy/mm/dd">
+            <input type="time" id="timePicker" class="form-control" placeholder="hh:mm">
+            <button type="button" id="countButton" class="btn">GO!</button>
+            <p id="message">&nbsp;</p>
+        </div>
     </div>
 </body>
-
+    
 </html>
