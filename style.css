@@ -49,8 +49,9 @@ h1 {
 .caption {
     margin-top: 5px;
     margin-bottom: 0px;
-    font-size: 15px;
+    font-size: 14px;
     font-family: 'Orbitron', sans-serif;
+    color: white;
 }
 
 #input-wrapper {
@@ -59,7 +60,7 @@ h1 {
 
 #input-wrapper p {
     margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 input {

@@ -30,7 +30,7 @@ $(document).ready(function () {
             $("#message").text("Please choose your date.").addClass("fail");
             return false;
         } else if (readDate() <= new Date().getTime()) {        // checks if past date
-            $("#message").text("You have choosen date from the past. Please choose a new date.").addClass("fail");
+            $("#message").text("You have chosen date from the past. Please choose a new date.").addClass("fail");
             return false;
         } else {
             return true;
