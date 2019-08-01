@@ -20,7 +20,11 @@ $(document).ready(function () {
             $('#timePicker').val("00:00")
         }
 
-        var countDownDate = new Date($('#datePicker').val() + " " + $('#timePicker').val()).getTime();
+        // ensure mobile Safari format compatibility
+        var regexp = /-/gi;
+        var date = $('#datePicker').val().replace(regexp, "/");
+
+        var countDownDate = new Date(date + " " + $('#timePicker').val()).getTime();
         return countDownDate;
     }
 
